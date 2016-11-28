@@ -56,20 +56,20 @@ public:
 
 };
 
-string lerAnimais(){
-	string animais;
+string lerPalavras(){
+	string palavras;
 	fstream in;
-	in.open("animais.txt");
+	in.open("palavras.txt");
 	while(!in.eof()){
-		getline (in,animais);
-		//cout<<animais<<endl;
-		return animais;
+		getline (in,palavras);
+		//cout<<palavras<<endl;
+		return palavras;
 	}
 }
 
 int main(){
-	string animais = lerAnimais();
-	cout<<animais;
+	string palavras = lerPalavras();
+	cout<<palavras;
 	
 	hashClass obj;
 	cout<<obj.HashF("Renan Kimura")<<endl;
